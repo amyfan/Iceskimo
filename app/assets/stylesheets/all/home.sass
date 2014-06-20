@@ -1,0 +1,48 @@
+@import "global"
+
+#contenthome
+  width: 100%
+  &.what
+    background-color: $brand
+    height: 100%
+    border: none
+#what
+  //background: url(../../images/french-back.jpg) no-repeat center
+  //background-position: center
+  background-size: 100%
+  //background-size: 100% auto
+  > div
+    @include box
+    float: left
+  p
+    font-size: 0.4em
+    color: white
+  #box
+    width: 35%
+    img
+      width: 100%
+  #teaser
+    padding-left: 2em
+    width: 100%
+    max-height: 800px
+    h2
+      text-shadow: 0.1em 0.1em 0.5em black
+      margin-top: -25px
+      font-weight: bold
+      text-align: center
+      font-size: 3em
+      line-height: 0.2em
+      color: white
+    h3
+      font-family: $stylish
+      text-shadow: 0.1em 0.1em 0.5em black
+      text-align: center
+      font-size: 2.5em
+      line-height: 0.2em
+      color: white
+    .actions
+      &.home
+        img.popup
+          height: 450px
+          margin-top: -400px
+          float: center

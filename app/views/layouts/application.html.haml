@@ -1,0 +1,16 @@
+!!! 5
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %title
+      = @title || 'Iceskimo Shaved Snow'
+    %meta{ :charset => 'utf-8' }
+    %meta{ :description => 'Iceskimo Shaved Snow' }
+    %meta{ :keywords => 'shaved snow, san diego, san diego shaved snow, shaved ice' }
+    %meta{ :property => "og:image", :content => "/images/fb_metaimage.jpg" }
+    = stylesheet_link_tag "application-all", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    %link{ :href => '/images/bob_favicon.ico', :rel => 'shortcut icon', :type => 'image/x-icon' }
+    = yield :head
+  %body
+    = yield
