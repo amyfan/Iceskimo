@@ -2,11 +2,9 @@
 
 #contenthome
   width: 100%
-  &.what
-    height: 100%
-    border: none
 #social
-  @include centered(430px)
+  @include centered(436px)
+  margin-top: -0.5em
   ul
     @include box
     @include clearfix
@@ -18,16 +16,16 @@
 #what
   //background: url(../../images/french-back.jpg) no-repeat center
   //background-position: center
-  background-size: 100%
+  //background-size: 100%
   //background-size: 100% auto
-  > div
-    @include box
-    float: left
+  // > div
+    // @include box
+    // float: left
   #teaser
-    width: 100%
-    .actions
-      &.home
-        img.popup
-          max-height: 600px
-          margin-top: -104px
-          float: center
+    @include centered(480px)
+    margin-top: 2em
+    @include clearfix
+    img.popup
+      max-height: 620px
+      margin-top: -104px
+      float: center
